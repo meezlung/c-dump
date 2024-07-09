@@ -28,6 +28,15 @@ int main() {
     printf("%f\n", my_float_number);
     printf("%c\n", my_letter);
 
+    int my_num;
+
+    printf("Enter a number: ");
+    scanf("%d", &my_num);  // Use &my_num to pass the address of my_num
+    printf("You entered: %d\n", my_num);
+
+    printf("Enter another number: ");
+    scanf("%i", &my_num);  // Use &my_num to pass the address of my_num
+    printf("You entered: %i\n", my_num);
 
     // (4)
     // Overwriting variable values
