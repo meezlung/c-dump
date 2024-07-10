@@ -45,20 +45,32 @@ int main() {
     <<= 	     x <<= 3 	x = x << 3
    */
 
-    int bit_a = 0b0000000001011100;
+    int bit_a = 0b0000000000000101;
     int bit_b = 0b0000000000101110;
 
+    printf("%d\n", bit_a);
+    printf("%d\n", bit_a << 1);
+
+    // Print the binary representation of bit_a
     for (int i = 15; i >= 0; i--) {
         int bit = (bit_a >> i) & 1;
         printf("%d", bit);
     }
-    printf("\n");
+    printf("\n"); // 0000000000000101
 
+    // Print the binary representation of bit_a left shifted by 1
+    for (int i = 15; i >= 0; i--) {
+        int bit = ((bit_a << 1) >> i) & 1;
+        printf("%d", bit);
+    }
+    printf("\n"); // 0000000000001010
+
+    // Print the binary representation of bit_b
     for (int i = 15; i >= 0; i--) {
         int bit = (bit_b >> i) & 1;
         printf("%d", bit);
     }
-    printf("\n");
+    printf("\n"); // 0000000000101110
     
     // AND Operator (&)
     printf("AND Operator\n");
