@@ -9,6 +9,12 @@ int main() {
     float result = x / y;
     printf("The result of x / y is %.2f.\n", result);
 
+    int int_x = 5;
+    int int_y = 2;
+    
+    int int_result = x / y;
+    printf("The result of int_x / int_y is %d.\n", int_result);
+
 
     // Two Conversion Approach
     //  - Implicit Conversion (automatically)
