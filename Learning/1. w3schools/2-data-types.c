@@ -94,7 +94,25 @@ int main() {
    printf("%d\n", my_int);
    printf("%d\n", my_int_2);
 
-   
+   // (5)
+   // Memory Size
+   int my_int_size = 5;
+   int16_t my_int_size_16 = 5;
+   int32_t my_int_size_32 = 5;
+   int64_t my_int_size_64 = 5;
+   float my_float_size;
+   double my_double_size;
+   char my_char_size;
+
+   // Compiler always expects the "sizeof" to always return a "long unsigned int (%lu)"
+   printf("%lu bytes\n", sizeof(my_int_size)); // 4 bytes (by default to modern systems)
+   printf("%lu bytes\n", sizeof(my_int_size_16)); // 2 bytes
+   printf("%lu bytes\n", sizeof(my_int_size_32)); // 4 bytes
+   printf("%lu bytes\n", sizeof(my_int_size_64)); // 8 bytes
+   printf("%lu bytes\n", sizeof(my_float_size));
+   printf("%lu bytes\n", sizeof(my_double_size));
+   printf("%lu bytes\n", sizeof(my_char_size));
+
 
    return 0;
 }
