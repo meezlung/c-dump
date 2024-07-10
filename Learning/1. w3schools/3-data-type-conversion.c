@@ -7,13 +7,13 @@ int main() {
     float y = 2;
 
     float result = x / y;
-    printf("The result of x / y is %.2f.\n", result);
+    printf("The result of x / y is %.2f.\n", result); // 2.50
 
     int int_x = 5;
     int int_y = 2;
     
-    float int_result = x / y;
-    printf("The result of int_x / int_y is %.2f.\n", int_result);
+    float int_result = int_x / int_y;
+    printf("The result of int_x / int_y is %.2f.\n", int_result); // 2.00
 
 
     // Two Conversion Approach
@@ -34,7 +34,7 @@ int main() {
     printf("The quotient is %f.\n", quotient); // Outputs 2.000 because the numbers in quotient variable are still integers
 
     // To fix that, you need to manually convert those two integers into float.
-    float correct_quotient = (float) 5 / 2;
+    float correct_quotient = (float) 5 / 2; // It's like float(5) in Python
     printf("The correct quotient is %.2f.\n", correct_quotient);
 
     return 0;
