@@ -12,8 +12,8 @@ int main() {
     int int_x = 5;
     int int_y = 2;
     
-    int int_result = x / y;
-    printf("The result of int_x / int_y is %d.\n", int_result);
+    float int_result = x / y;
+    printf("The result of int_x / int_y is %.2f.\n", int_result);
 
 
     // Two Conversion Approach
