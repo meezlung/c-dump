@@ -10,7 +10,7 @@ int main() {
     /*
     This will not work
 
-    const int minutes_per_hour;
+    const int minutes_per_hour; // Note: This line is just useless.
     minutes_per_hour = 60; <- Expression must be a modifiable variable
     */
 
