@@ -83,7 +83,7 @@ int main() {
     printf("\n");
 
 
-    // OR Operator (|)
+    // OR Operator (|) 
     printf("OR Operator\n");
     int bit_or = bit_a | bit_b;
 
